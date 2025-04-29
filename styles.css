@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 160.267px);
+    grid-template-rows: repeat(3, 160.267px);
+    height: 500px;
+    width: 500px;
+    border: 10px solid #000;
+    margin: 35px auto;
+}
+
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2.5px solid #000;
+}
+
+.fa-xmark {
+    font-size: 8rem;
+}
+
+/* .fa-xmark:hover {
+    color: #0099008d;
+} */
+
+.fa-o {
+    font-size: 6.5rem;
+}
+
+.fa-xmark.hidden {
+    display: none;
+}
