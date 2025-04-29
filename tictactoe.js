@@ -53,14 +53,8 @@ const BoardController = (p1 = "Player 1", p2 = "Player 2") => {
     const board = gb.getBoard();
 
     const players = [
-        {
-            name: p1, 
-            mark: "x", 
-        }, 
-        {
-            name: p2, 
-            mark: "o", 
-        } 
+        { name: p1, mark: "x" }, 
+        { name: p2, mark: "o" } 
     ];
 
     let activePlayer = players[0];
@@ -84,7 +78,6 @@ const BoardController = (p1 = "Player 1", p2 = "Player 2") => {
             if (board[row-1][i].getMark() == mark) patterns.row++;
             if (board[i][col-1].getMark() == mark) patterns.col++;
             if (board[i][i].getMark() == mark) patterns.ldiag++;
-            console.log((board.length-1)-i, col-1);
             if (board[(board.length-1)-i][i].getMark() == mark) patterns.rdiag++;
         }
         
