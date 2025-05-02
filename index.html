@@ -9,16 +9,29 @@
     <script src="tictactoe.js" defer></script>
 </head>
 <body>
-    <div class="board">
-        <div class="tile" style="--n:1"><i class="fa-solid fa-xmark hidden"></i></div>
-        <div class="tile" style="--n:2"><i class="fa-solid fa-xmark hidden"></i></div>
-        <div class="tile" style="--n:3"><i class="fa-solid fa-xmark hidden"></i></div>
-        <div class="tile" style="--n:4"><i class="fa-solid fa-xmark hidden"></i></div>
-        <div class="tile" style="--n:5"><i class="fa-solid fa-xmark hidden"></i></div>
-        <div class="tile" style="--n:6"><i class="fa-solid fa-xmark hidden"></i></div>
-        <div class="tile" style="--n:7"><i class="fa-solid fa-xmark hidden"></i></div>
-        <div class="tile" style="--n:8"><i class="fa-solid fa-xmark hidden"></i></div>
-        <div class="tile" style="--n:9"><i class="fa-solid fa-xmark hidden"></i></div>
+    <p class="status"></p>
+    <div class="board"></div>
+    <p class="current-player"></p>
+    <div class="options">
+        <!-- <button class="reset" type="button">Reset</button> -->
+        <div class="opponent-type">
+            <div>
+                <label for="human">Human</label>
+                <input type="radio" name="type" id="human" checked>
+            <div>
+                <label for="cpu">CPU</label>
+                <input type="radio" name="type" id="cpu">
+            </div>
+        </div>
+        <div class="players">
+            <div>
+                <label for="p1">Player 1 Name:</label>
+                <input type="text" name="p1" id="p1">
+            <div>
+                <label for="p2">Player 2 Name:</label>
+                <input type="text" name="p2" id="p2">
+            </div>
+        </div>
     </div>
 </body>
 </html>

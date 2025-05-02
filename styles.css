@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +14,8 @@
     width: 500px;
     border: 10px solid #000;
     margin: 35px auto;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20240103/pngtree-glossy-varnished-wood-texture-background-image_13872273.png);
+    background-clip: content-box;
 }
 
 .tile {
@@ -19,20 +23,64 @@
     justify-content: center;
     align-items: center;
     border: 2.5px solid #000;
+    background-color: transparent;
+    cursor: pointer;
 }
 
-.fa-xmark {
-    font-size: 8rem;
+.tile:hover {
+    filter: grayscale(50%);
 }
 
-/* .fa-xmark:hover {
-    color: #0099008d;
-} */
-
-.fa-o {
-    font-size: 6.5rem;
+.xmark, .opera-logo {
+    width: 75%;
+    height: auto;
 }
 
-.fa-xmark.hidden {
-    display: none;
+.status, .current-player {
+    font-family: "Mulish", serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.status {
+    margin-top: 15px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.opponent-type {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: "Mulish", serif;
+}
+
+.opponent-type div {
+    display: flex;
+    align-items: center;
+}
+
+.opponent-type label, .opponent-type input {
+    margin-left: 10px;
+}
+
+.opponent-type div:first-child {
+    margin-right: 20px;
+}
+
+.reset {
+    background-color: rgb(28, 28, 28);
+    color: #f2f2f2;
+    padding: 10px 25px;
+    margin-top: 15px;
+    font-family: "Mulish", serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    align-self: center;
 }
