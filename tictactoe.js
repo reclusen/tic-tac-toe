@@ -303,8 +303,6 @@ function ScreenController() {
         updateScreen(statusMessage, e.target.firstElementChild);
     }
 
-    const mark = game.playerFunc.getActivePlayer().mark;
-    
     boardDiv.addEventListener("click", clickTileHandler);
     
     updateScreen();
